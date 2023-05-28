@@ -1,0 +1,78 @@
+/* CSS */
+h1 {
+	text-align: center;
+}
+
+#game-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2rem auto;
+	width: 80%;
+	max-width: 600px;
+	padding: 1rem;
+	background-color: #efefef;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#game-form label {
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+
+#game-form input[type="text"],
+#game-form select,
+#game-form textarea {
+	margin-bottom: 1rem;
+	padding: 0.5rem;
+	border-radius: 5px;
+	border: none;
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+	width: 100%;
+}
+
+#game-form select {
+	appearance: none;
+	background-image: url('https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/menu-512.png');
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+#game-form button {
+	margin-top: 1rem;
+	padding: 0.5rem 1rem;
+	background-color: #0077dd;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+#game-table {
+	margin: 2rem auto;
+	width: 80%;
+	max-width: 800px;
+	border-collapse: collapse;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#game-table th,
+#game-table td {
+	padding: 0.5rem;
+	text-align: left;
+}
+
+#game-table th {
+	background-color: #0077dd;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+#game-table td:first-child {
+	font-weight: bold;
+}

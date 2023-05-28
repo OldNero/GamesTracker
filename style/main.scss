@@ -1,0 +1,79 @@
+$radius: 12px;
+
+$bg-color: #2f2f2f;
+$accent: hsla(36, 73%, 61%, 0.50);
+
+$font-tiny: 14px;
+$font-small: 16px;
+$font-regular: 20px;
+$font-big: 24px;
+
+$font-color: rgb(240, 240, 240);
+
+@font-face {
+    font-family: "Inter";
+    src: url("/media/font/Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+
+@mixin rounded {
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+  }
+
+
+html {
+    background-color: $bg-color;
+    background-image: url(/media/img/bg-image-2.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: Inter, sans-serif;
+    color: $font-color;
+}
+
+body * {
+    color: $font-color;
+    font-size: $font-regular;
+}
+
+body {
+    margin: 15vh 15vw 0 15vw;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+
+    .motto {
+        margin-left: 60px;
+        align-self: center;
+        font-size: $font-regular;
+        font-weight: 200;
+
+    }
+}
+
+.search-area {
+    margin-top: 50px;
+
+    #search {
+        @include rounded;
+        width: 30vw;
+
+        background-color: $accent;
+    }
+
+    #platform {
+        @include rounded;
+        width: 10vw;
+
+        background-color: $accent;
+
+    }
+
+}
+
+option * {
+    padding: 8vh;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+    <link rel="stylesheet" href="/style/StyleReset.css">
+    <link rel="stylesheet" href="/style/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Game Tracker</title>
+</head>
+
+<body>
+
+    <div class="logo"> <img src="/media/img/Logo.png" alt="">
+        <div class="motto">Keep track of all your Games <br> in one place!</div>
+    </div>
+
+    <div class="search-area">
+        <input type="search" name="" id="searchBox">
+        <select name="Game Platform" id="platform">
+            <option value="" id="option">Windows</option>
+            <option value="">Linux</option>
+            <option value="">Mac</option>
+            <option value="">Playstation</option>
+            <option value="">Xbox <i class="fas fa-xbox"></i> </option>
+            <option value="">Nintendo</option>
+        </select>
+
+        <button id="searchBtn">Search</button>
+        <div id="result">.. </div>
+    </div>
+
+    <script src="/app/app.js"></script>
+</body>
+</html>

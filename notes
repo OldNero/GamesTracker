@@ -1,0 +1,52 @@
+{
+    "platform_id": 1,
+    "platform_name": "Linux"
+},{
+    "platform_id": 3,
+    "platform_name": "Windows"
+}, {
+    "platform_id": 74,
+    "platform_name": "Macintosh"
+}, {
+    "platform_id": 6,
+    "platform_name": "PlayStation"
+}, {
+    "platform_id": 7,
+    "platform_name": "PlayStation 2"
+}, {
+    "platform_id": 81,
+    "platform_name": "PlayStation 3"
+}, {
+    "platform_id": 141,
+    "platform_name": "PlayStation 4"
+}, {
+    "platform_id": 288,
+    "platform_name": "PlayStation 5"
+},{
+    "platform_id": 13,
+    "platform_name": "Xbox"
+}, {
+    "platform_id": 69,
+    "platform_name": "Xbox 360"
+},{
+    "platform_id": 142,
+    "platform_name": "Xbox One"
+}, {
+    "platform_id": 289,
+    "platform_name": "Xbox Series"
+}, {
+    "platform_id": 203,
+    "platform_name": "Nintendo Switch"
+}, {
+    "platform_id": 82,
+    "platform_name": "Wii"
+}, {
+    "platform_id": 132,
+    "platform_name": "Wii U"
+}
+
+
+1- Get search query from search box
+2- send search query to api safely
+3- get results from api in json format
+4- send results to results area to show on screen

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <!-- Div element to display the JSON data -->
+  <div id="dataContainer"></div>
+  
+  <script>
+    async function fetchData() {
+      try {
+        let res = await fetch("https://api.mobygames.com/v1/games?format=normal&api_key=moby_eRqEEME4024sQrpzT3LVTTmtIkO&title=lightfall");
+        
+        if(!res.ok){
+          throw new Error("Network response not ok.");
+        }
+          
+        let data = await res.json();
+          
+        // Create an array to hold the objects from the parsed data
+        const objArray = [];
+          
+        // Parse the data and push each object into the array
+        for(let i=0; i < Object.keys(data).length; i++){
+            objArray.push(data[Object.keys(data)[i]]);
+        }
+            
+        // Create and populate the target <div> element with the objects
+        const containerDiv = document.getElementById("dataContainer");
+          
+        for(let j=0; j < objArray.length;j++){
+            containerDiv.appendChild(objArray[j]);
+        }
+      } catch(err) {
+        console.log(`Error Occured:${err}`);
+      }
+    }
+    
+    // Call the fetchData function
+    fetchData();
+  </script>
+</body>
+</html>
