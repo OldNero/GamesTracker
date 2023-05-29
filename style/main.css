@@ -34,11 +34,11 @@ body {
 .search-area {
   margin-top: 50px;
 }
-.search-area #search {
+.search-area #searchBox, .search-area #searchBtn {
   border-radius: 10px;
   padding: 10px;
   border: none;
-  width: 30vw;
+  width: auto;
   background-color: hsla(36, 73%, 61%, 0.5);
 }
 .search-area #platform {
@@ -49,6 +49,40 @@ body {
   background-color: hsla(36, 73%, 61%, 0.5);
 }
 
-option * {
-  padding: 8vh;
+#result {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+#gameBox {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  border: 2px solid hsla(36, 73%, 61%, 0.5);
+  border-radius: 12px;
+  padding: 3px;
+  margin: 4px;
+  width: 12vw;
+  height: 35vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 200ms ease-in-out;
+}
+
+#gameBox:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#gameTitle {
+  width: 100%;
+  background-color: #2f2f2f;
+  border-radius: 12px;
+  padding: 7px;
+  color: hsla(36, 73%, 61%, 0.5);
+  font-size: 16px;
 }

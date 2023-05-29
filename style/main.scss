@@ -1,5 +1,8 @@
 $radius: 12px;
 
+$pad-sm: 3px;
+$pad-bg: 7px;
+
 $bg-color: #2f2f2f;
 $accent: hsla(36, 73%, 61%, 0.50);
 
@@ -57,10 +60,9 @@ body {
 .search-area {
     margin-top: 50px;
 
-    #search {
+    #searchBox, #searchBtn {
         @include rounded;
-        width: 30vw;
-
+        width: auto;
         background-color: $accent;
     }
 
@@ -74,6 +76,42 @@ body {
 
 }
 
-option * {
-    padding: 8vh;
+
+#result {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+#gameBox {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    border: 2px solid $accent;
+    border-radius: $radius;
+    padding: $pad-sm;
+    margin: 4px;
+    width: 12vw;
+    height: 35vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 200ms ease-in-out;
+
+}
+
+#gameBox:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#gameTitle {
+    width: 100%;
+    background-color: #2f2f2f;
+    border-radius: $radius;
+    padding: $pad-bg;
+    color: $accent;
+    font-size: $font-small;
 }

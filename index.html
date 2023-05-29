@@ -19,20 +19,22 @@
     </div>
 
     <div class="search-area">
-        <input type="search" name="" id="searchBox">
-        <select name="Game Platform" id="platform">
+        <input type="text" name="" id="searchBox">
+<!--         <select name="Game Platform" id="platform">
             <option value="" id="option">Windows</option>
             <option value="">Linux</option>
             <option value="">Mac</option>
             <option value="">Playstation</option>
             <option value="">Xbox <i class="fas fa-xbox"></i> </option>
             <option value="">Nintendo</option>
-        </select>
+        </select> -->
 
-        <button id="searchBtn">Search</button>
-        <div id="result">.. </div>
+        <button id="searchBtn" onclick="getGameInfo()">Search</button>
+
     </div>
+    <div id="result"></div>
 
     <script src="/app/app.js"></script>
 </body>
+
 </html>
